@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
+  <constants>
+  </constants>
+  <classes>
+  </classes>
+  <menus>
+  </menus>
+  <user_rights>
+    <profiles>
+      <profile id="43" _delta="define">
+        <name>User Manager</name>
+        <description>Has the rights to create and modify users...</description>
+        <groups>
+          <group id="User">
+            <actions>
+              <action id="action:write">allow</action>
+              <action id="action:delete">allow</action>
+              <action id="action:read">allow</action>
+              <action id="action:bulk read">allow</action>
+              <action id="action:bulk write">allow</action>
+            </actions>
+          </group>
+        </groups>
+      </profile>
+      <profile id="44" _delta="define">
+        <name>Notification Manager</name>
+        <description>Has the rights to create and modify the triggers and actions</description>
+        <groups>
+          <group id="Notification">
+            <actions>
+              <action id="action:write">allow</action>
+              <action id="action:delete">allow</action>
+              <action id="action:read">allow</action>
+              <action id="action:bulk read">allow</action>
+              <action id="action:bulk write">allow</action>
+            </actions>
+          </group>
+        </groups>
+      </profile>
+      <profile id="45" _delta="define">
+        <name>Audit Manager</name>
+        <description>Has the rights to create and modify Audit rules</description>
+        <groups>
+          <group id="Audit">
+            <actions>
+              <action id="action:write">allow</action>
+              <action id="action:delete">allow</action>
+              <action id="action:read">allow</action>
+              <action id="action:bulk read">allow</action>
+              <action id="action:bulk write">allow</action>
+            </actions>
+          </group>
+        </groups>
+      </profile>
+      <profile id="46" _delta="define">
+        <name>Query Manager</name>
+        <description>Has the rights to create and modify the Query Phrasebook</description>
+        <groups>
+          <group id="Query">
+            <actions>
+              <action id="action:write">allow</action>
+              <action id="action:delete">allow</action>
+              <action id="action:read">allow</action>
+              <action id="action:bulk read">allow</action>
+              <action id="action:bulk write">allow</action>
+            </actions>
+          </group>
+        </groups>
+      </profile>
+      <profile id="47" _delta="define">
+        <name>SynchroData Manager</name>
+        <description>Has the rights to create and modify the Synchro data source</description>
+        <groups>
+          <group id="SynchroData">
+            <actions>
+              <action id="action:write">allow</action>
+              <action id="action:delete">allow</action>
+              <action id="action:read">allow</action>
+              <action id="action:bulk read">allow</action>
+              <action id="action:bulk write">allow</action>
+              
+            </actions>
+          </group>
+        </groups>
+      </profile>
+      <profile id="48" _delta="define">
+        <name>Admin Tools Manager</name>
+        <description>Has the rights to Admin</description>
+        <groups>
+          <group id="AdminTools">
+            <actions>
+              <action id="action:write">allow</action>
+              <action id="action:delete">allow</action>
+              <action id="action:read">allow</action>
+            </actions>
+          </group>
+        </groups>
+      </profile>
+    </profiles>
+    <groups>
+    </groups>
+  </user_rights>
+</itop_design>
