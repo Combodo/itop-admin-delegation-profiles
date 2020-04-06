@@ -5,7 +5,7 @@
 
 SetupWebPage::AddModule(
 	__FILE__, // Path to the current file, all other file names are relative to the directory containing this file
-	'itop-admin-delegation-profiles/0.1.0',
+	'itop-admin-delegation-profiles/1.0.0',
 	array(
 		// Identification
 		//

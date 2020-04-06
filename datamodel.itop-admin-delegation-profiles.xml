@@ -10,7 +10,7 @@
     <profiles>
       <profile id="43" _delta="define">
         <name>User Manager</name>
-        <description>Has the rights to create and modify users...</description>
+        <description>Has the rights to create and modify users... Must be used in conjunction with other profiles (e.g. Configuration Manager, Service Manager,…).</description>
         <groups>
           <group id="User">
             <actions>
@@ -25,7 +25,7 @@
       </profile>
       <profile id="44" _delta="define">
         <name>Notification Manager</name>
-        <description>Has the rights to create and modify the triggers and actions</description>
+        <description>Has the rights to create and modify the triggers and actions. Must be used in conjunction with other profiles (e.g. Configuration Manager, Service Manager,…).</description>
         <groups>
           <group id="Notification">
             <actions>
@@ -40,7 +40,7 @@
       </profile>
       <profile id="45" _delta="define">
         <name>Audit Manager</name>
-        <description>Has the rights to create and modify Audit rules</description>
+        <description>Has the rights to create and modify Audit rules. Must be used in conjunction with other profiles (e.g. Configuration Manager, Service Manager,…).</description>
         <groups>
           <group id="Audit">
             <actions>
@@ -55,7 +55,7 @@
       </profile>
       <profile id="46" _delta="define">
         <name>Query Manager</name>
-        <description>Has the rights to create and modify the Query Phrasebook</description>
+        <description>Has the rights to create and modify the Query Phrasebook. Must be used in conjunction with other profiles (e.g. Configuration Manager, Service Manager,…).</description>
         <groups>
           <group id="Query">
             <actions>
@@ -70,7 +70,7 @@
       </profile>
       <profile id="47" _delta="define">
         <name>SynchroData Manager</name>
-        <description>Has the rights to create and modify the Synchro data source</description>
+        <description>Has the rights to create and modify the Synchro data source. Must be used in conjunction with other profiles (e.g. Configuration Manager, Service Manager,…).</description>
         <groups>
           <group id="SynchroData">
             <actions>
@@ -86,7 +86,7 @@
       </profile>
       <profile id="48" _delta="define">
         <name>Admin Tools Manager</name>
-        <description>Has the rights to Admin</description>
+        <description>can manage Users, Notifications, Audit, Queries, DataSynchros. Must be used in conjunction with other profiles (e.g. Configuration Manager, Service Manager,…).</description>
         <groups>
           <group id="AdminTools">
             <actions>
