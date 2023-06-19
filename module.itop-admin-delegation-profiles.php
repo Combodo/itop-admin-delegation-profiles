@@ -5,17 +5,17 @@
 
 SetupWebPage::AddModule(
 	__FILE__, // Path to the current file, all other file names are relative to the directory containing this file
-	'itop-admin-delegation-profiles/1.0.0',
-	array(
-		// Identification
-		//
-		'label' => 'Profiles per admin fonction',
-		'category' => 'Datamodel',
+    'itop-admin-delegation-profiles/1.1.0',
+    array(
+        // Identification
+        //
+        'label' => 'Profiles per admin fonction',
+        'category' => 'Datamodel',
 
-		// Setup
-		//
-		'dependencies' => array(
-			'itop-config-mgmt/2.5.0'||'itop-structure/3.0.0'
+        // Setup
+        //
+        'dependencies' => array(
+            'itop-config-mgmt/2.7.0' || 'itop-structure/3.0.0'
 		),
 		'mandatory' => false,
 		'visible' => true,
