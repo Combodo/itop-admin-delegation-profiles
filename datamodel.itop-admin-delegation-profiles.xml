@@ -86,12 +86,73 @@
       </profile>
       <profile id="48" _delta="define">
         <name>Admin Tools Manager</name>
-        <description>can manage Users, Notifications, Audit, Queries, DataSynchros. Must be used in conjunction with other profiles (e.g. Configuration Manager, Service Manager,…).</description>
+        <description>can manage Users, Notifications, Audit, Queries, DataSynchros. Must be used in conjunction with
+          other profiles (e.g. Configuration Manager, Service Manager,…).
+        </description>
         <groups>
           <group id="AdminTools">
             <actions>
               <action id="action:write">allow</action>
               <action id="action:delete">allow</action>
+              <action id="action:read">allow</action>
+            </actions>
+          </group>
+        </groups>
+      </profile>
+      <profile id="120" _delta="define">
+        <name>Query History</name>
+        <description>Has the rights to query history table Must be used in conjunction with other profiles (e.g.
+          Configuration Manager, Service Manager,…) and should be used in conjunction with Query Manager Profile.
+        </description>
+        <groups>
+          <group id="History">
+            <actions>
+              <action id="action:read">allow</action>
+              <action id="action:bulk read">allow</action>
+            </actions>
+          </group>
+        </groups>
+      </profile>
+      <profile id="121" _delta="define">
+        <name>Mail Inbox Manager</name>
+        <description>Has all rights to create/modify Mail Inboxes and OAuth clients</description>
+        <groups>
+          <group id="MailInbox">
+            <actions>
+              <action id="action:read">allow</action>
+              <action id="action:bulk read">allow</action>
+              <action id="action:write">allow</action>
+              <action id="action:bulk write">allow</action>
+              <action id="action:delete">allow</action>
+            </actions>
+          </group>
+          <group id="OauthConnection">
+            <actions>
+              <action id="action:read">allow</action>
+              <action id="action:bulk read">allow</action>
+              <action id="action:write">allow</action>
+              <action id="action:bulk write">allow</action>
+              <action id="action:delete">allow</action>
+            </actions>
+          </group>
+        </groups>
+      </profile>
+      <profile id="122" _delta="define">
+        <name>Mail Messages Manager</name>
+        <description>Has all rights to see, modify and delete Mail Messages and read MailInboxes</description>
+        <groups>
+          <group id="MailMessage">
+            <actions>
+              <action id="action:read">allow</action>
+              <action id="action:bulk read">allow</action>
+              <action id="action:write">allow</action>
+              <action id="action:bulk write">allow</action>
+              <action id="action:delete">allow</action>
+              <action id="action:bulk delete">allow</action>
+            </actions>
+          </group>
+          <group id="MailInbox">
+            <actions>
               <action id="action:read">allow</action>
             </actions>
           </group>
