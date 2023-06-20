@@ -15,8 +15,9 @@ SetupWebPage::AddModule(
         // Setup
         //
         'dependencies' => array(
-            'itop-config-mgmt/2.7.0' || 'itop-structure/3.0.0'
-		),
+            'combodo-email-synchro/3.7.0',
+            'itop-structure/3.1.0',
+        ),
 		'mandatory' => false,
 		'visible' => true,
 
