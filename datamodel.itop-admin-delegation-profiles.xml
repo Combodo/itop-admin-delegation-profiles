@@ -113,51 +113,6 @@
           </group>
         </groups>
       </profile>
-      <profile id="121" _delta="define">
-        <name>Mail Inbox Manager</name>
-        <description>Has all rights to create/modify Mail Inboxes and OAuth clients</description>
-        <groups>
-          <group id="MailInbox">
-            <actions>
-              <action id="action:read">allow</action>
-              <action id="action:bulk read">allow</action>
-              <action id="action:write">allow</action>
-              <action id="action:bulk write">allow</action>
-              <action id="action:delete">allow</action>
-            </actions>
-          </group>
-          <group id="OauthConnection">
-            <actions>
-              <action id="action:read">allow</action>
-              <action id="action:bulk read">allow</action>
-              <action id="action:write">allow</action>
-              <action id="action:bulk write">allow</action>
-              <action id="action:delete">allow</action>
-            </actions>
-          </group>
-        </groups>
-      </profile>
-      <profile id="122" _delta="define">
-        <name>Mail Messages Manager</name>
-        <description>Has all rights to see, modify and delete Mail Messages and read MailInboxes</description>
-        <groups>
-          <group id="MailMessage">
-            <actions>
-              <action id="action:read">allow</action>
-              <action id="action:bulk read">allow</action>
-              <action id="action:write">allow</action>
-              <action id="action:bulk write">allow</action>
-              <action id="action:delete">allow</action>
-              <action id="action:bulk delete">allow</action>
-            </actions>
-          </group>
-          <group id="MailInbox">
-            <actions>
-              <action id="action:read">allow</action>
-            </actions>
-          </group>
-        </groups>
-      </profile>
     </profiles>
     <groups>
     </groups>
