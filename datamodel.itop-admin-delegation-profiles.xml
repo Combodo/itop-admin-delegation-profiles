@@ -115,6 +115,10 @@
       </profile>
     </profiles>
     <groups>
+      <!-- Note: This node is only here to keep compatibility with iTop 2.7, otherwise it crashes during the MTP -->
+      <group id="History" _delta="define_if_not_exists">
+	      <classes />
+      </group>
     </groups>
   </user_rights>
 </itop_design>

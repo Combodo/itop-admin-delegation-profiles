@@ -5,7 +5,7 @@
 
 SetupWebPage::AddModule(
 	__FILE__, // Path to the current file, all other file names are relative to the directory containing this file
-    'itop-admin-delegation-profiles/1.2.0',
+    'itop-admin-delegation-profiles/1.2.1',
     array(
         // Identification
         //
@@ -15,7 +15,10 @@ SetupWebPage::AddModule(
         // Setup
         //
         'dependencies' => array(
-	        'itop-config-mgmt/2.7.0' || 'itop-structure/3.0.0'
+	        'itop-config-mgmt/2.7.0' || 'itop-structure/3.0.0',
+	        // itop-profiles-itil is here to ensure that the /itop_design/groups/group[@id="History"] alteration comes after those from that module.
+	        // This allows to define the missing "History" group in iTop 2.7 / 3.0, while merging smoothly with iTop 3.1+
+	        'itop-profiles-itil/2.7.0',
         ),
 		'mandatory' => false,
 		'visible' => true,
